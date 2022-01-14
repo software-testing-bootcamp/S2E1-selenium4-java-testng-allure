@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Single Classes Suite">
+    <test name = "Tests" parallel = "none">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name = "tests.RelativeLocators" />
+        </classes>
+    </test>
+</suite>

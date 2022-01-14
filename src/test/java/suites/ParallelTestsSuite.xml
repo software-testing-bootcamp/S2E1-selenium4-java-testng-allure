@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Parallel Tests Suite" parallel="tests" thread-count="2">
+    <test name = "FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name = "tests.RelativeLocators" />
+        </classes>
+    </test>
+    <test name = "ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name = "tests.RelativeLocators" />
+        </classes>
+    </test>
+</suite>
